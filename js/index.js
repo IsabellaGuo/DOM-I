@@ -57,6 +57,23 @@ navTag[4].innerText = "About"
 navTag[5].setAttribute("class", ".nav-item-6")
 navTag[5].innerText = "Contact"
 
+navTag.forEach(link => link.style.color = "green")
+
+//two new items
+const newNav1 = document.createElement("a");
+const oldNav = document.querySelector("nav");
+newNav1.innerText = "Partnership"
+newNav1.href = "#"
+oldNav.prepend(newNav1)
+newNav1.style.color = "green"
+
+const newNav2 = document.createElement("a");
+const oldNav2 = document.querySelector("nav");
+newNav2.innerText = "Other"
+newNav2.href = "#"
+oldNav.append(newNav2)
+newNav2.style.color = "green"
+
 //cta section
 let mainHeader = document.querySelector("h1");
 mainHeader.textContent = siteContent["cta"]["h1"]
