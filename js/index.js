@@ -85,3 +85,13 @@ let mainImg = document.querySelector("#middle-img");
 mainImg.setAttribute("src", siteContent["main-content"]["middle-img-src"])
 
 //bottom
+let contactInfo = document.querySelector(".contact");
+
+contactInfo.getElementsByTagName("h4")[0].textContent = siteContent["contact"]["contact-h4"]
+contactInfo.getElementsByTagName("p")[0].textContent = siteContent["contact"]["address"]
+contactInfo.getElementsByTagName("p")[1].textContent = siteContent["contact"]["phone"]
+contactInfo.getElementsByTagName("p")[2].textContent = siteContent["contact"]["email"]
+
+//footer
+let footer = document.querySelector("footer");
+footer.innerText = "copyright Great Idea! 2018"
